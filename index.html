@@ -1,0 +1,1237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;800&family=Great+Vibes&display=swap"
+    rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+  <!-- Google Font for Cute Look -->
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- GSAP Animation -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+  <title>Document</title>
+</head>
+
+<style>
+  .paper-bg {
+    background: #f5f5f5;
+    background-image: radial-gradient(rgba(0, 0, 0, 0.05) 1px,
+        transparent 1px),
+      radial-gradient(rgba(0, 0, 0, 0.03) 1px, transparent 1px);
+    background-size: 3px 3px, 5px 5px;
+  }
+
+  .bg-dark-texture {
+    background: #1f1f1f;
+    background-image: radial-gradient(rgba(255, 255, 255, 0.03) 1px,
+        transparent 1px),
+      radial-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+    background-size: 5px 5px, 3px 3px;
+  }
+
+  .stroke-white {
+    -webkit-text-stroke: 2px white;
+  }
+
+  .title-font {
+    font-family: "Playfair Display", serif;
+  }
+
+  .signature-font {
+    font-family: "Great Vibes", cursive;
+  }
+
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-fadeInUp {
+    animation: fadeInUp 1s ease-out forwards;
+  }
+
+  /* Wavy Top Background */
+
+  /* Blob Style */
+  .blob {
+    padding: 18px 28px;
+    border-radius: 40% 60% 55% 45% / 45% 60% 40% 55%;
+    display: inline-block;
+    font-weight: 600;
+    color: #fff;
+    animation: float 5s ease-in-out infinite;
+  }
+
+  /* Floating animation */
+  @keyframes float {
+    0% {
+      transform: translateY(0px);
+    }
+
+    50% {
+      transform: translateY(-12px);
+    }
+
+    100% {
+      transform: translateY(0px);
+    }
+  }
+</style>
+
+<body>
+  <main>
+    <!-- section 1 - main page -->
+    <section
+      class="paper-bg w-full min-h-screen flex flex-col lg:flex-row items-center justify-center px-6 sm:px-10 md:px-20 py-12">
+      <!-- LEFT IMAGE -->
+      <div class="w-full lg:w-1/2 flex justify-center mb-10 lg:mb-0">
+        <img src="./yashfa-portfolio.png" class="w-64 sm:w-72 md:w-96 drop-shadow-lg" alt="illustration" />
+      </div>
+
+      <!-- RIGHT TEXT -->
+      <div class="w-full lg:w-1/2 text-center lg:text-left relative">
+        <p class="uppercase tracking-widest text-black/90 text-base sm:text-lg font-semibold">
+          Graphic Designer
+        </p>
+
+        <h1 class="title-font text-black text-5xl sm:text-6xl lg:text-7xl font-extrabold leading-tight drop-shadow-xl">
+          PORTFOLIO
+        </h1>
+
+        <!-- SIGNATURE -->
+        <p class="signature-font text-3xl sm:text-4xl text-black mt-3 lg:mt-0 lg:absolute lg:-bottom-5 lg:left-24">
+          yashfa Taqreer
+        </p>
+      </div>
+    </section>
+
+
+    <marquee behavior="" direction="" class="bg-black text-white p-5 text-4xl">
+      ◽ Welcome to my portfolio .Let's work together ◽ Welcome to my
+      portfolio .Let's work together ◽ Welcome to my portfolio .Let's work
+      together</marquee>
+    </section>
+
+    <!-- About section-->
+
+    <section class="paper-bg w-full bg-white py-16 px-6 md:px-20">
+      <div class="max-w-6xl mx-auto grid lg:grid-cols-2 sm:grid-cols-1 gap-10 items-center">
+        <!-- Left Text Section -->
+        <div>
+          <h1 class="text-5xl font-bold mb-6 tracking-tight">about.</h1>
+
+          <p class="font-semibold text-lg mb-6">
+            10 October 2007 | yashuuz786@gmail.com
+          </p>
+
+          <p class="text-gray-700 leading-relaxed mb-4">
+            I’,m <strong> Yashfa Taqreer</strong> a creative and
+            detail-oriented Graphic Designer with a passion for transforming
+            ideas into visually compelling designs. I specialize in branding,
+            social media creatives, print layouts, and digital graphics that
+            help brands communicate their identity with clarity and style.
+          </p>
+
+          <p class="text-gray-700 leading-relaxed mb-4">
+            With a strong command of
+            <strong>Adobe Photoshop, Illustrator, InDesign, Canva, and Figma </strong>, I create designs that are clean,
+            modern, and aligned with the
+            client’s goals. Whether it’s developing a complete brand identity,
+            designing engaging social media content, or creating professional
+            marketing materials, I focus on delivering work that is both
+            aesthetically appealing and strategically effective.
+          </p>
+
+          <p class="text-gray-700 leading-relaxed mb-4">
+            I believe in creativity with purpose—every color, font, and layout
+            should tell a story. My approach combines creativity, research,
+            and attention to detail to ensure every project stands out and
+            leaves a strong impression.
+            <strong>Now, she is working as both graphic designer and comic
+              author.</strong>
+          </p>
+
+          <div class="flex items-center gap-2 mt-6">
+            <div class="w-7 h-7 bg-black rounded-full flex items-center justify-center">
+              <span class="text-white text-sm">in</span>
+            </div>
+            <p class="text-gray-700">Yashfa Taqreer</p>
+          </div>
+        </div>
+
+        <!-- Right Image Section -->
+        <div>
+          <img src="https://i.pinimg.com/1200x/48/d9/f3/48d9f32efbaa6bdf1ce09d087e73c11d.jpg" alt="Profile Photo"
+            class="w-full h-auto object-cover rounded-lg shadow-md" />
+        </div>
+      </div>
+    </section>
+
+    <!-- skill section   -->
+
+    <section class="w-full bg-dark-texture text-white py-16 px-6 md:px-20 h-[auto]">
+      <div class="max-w-6xl mx-auto">
+        <!-- Title -->
+        <h1 class="text-5xl font-bold mb-8 tracking-tight">skills.</h1>
+
+        <!-- Skill Tags -->
+        <div class="flex flex-wrap gap-3 mb-14">
+          <span class="px-4 py-2 border border-gray-400 rounded-full text-sm">Illustration</span>
+          <span class="px-4 py-2 border border-gray-400 rounded-full text-sm">Digital Imaging</span>
+          <span class="px-4 py-2 border border-gray-400 rounded-full text-sm">Design</span>
+          <span class="px-4 py-2 border border-gray-400 rounded-full text-sm">Comic/Cartoon</span>
+          <span class="px-4 py-2 border border-gray-400 rounded-full text-sm">Character Design</span>
+          <span class="px-4 py-2 border border-gray-400 rounded-full text-sm">Storyboarding</span>
+          <span class="px-4 py-2 border border-gray-400 rounded-full text-sm">Story Writing</span>
+        </div>
+
+        <!-- Two columns -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+          <!-- Softwares -->
+          <div>
+            <h2 class="text-4xl font-bold mb-8 tracking-tight">softwares.</h2>
+
+            <div class="flex gap-10">
+              <div>
+                <!-- Row 1 -->
+                <div class="flex items-center gap-4 mb-5">
+                  <div class="w-12 h-12 bg-white rounded-md flex items-center justify-center">
+                    <img src="https://i.pinimg.com/736x/fe/01/99/fe01990d35a4a92f80cdf63708818425.jpg" class="w-10" />
+                  </div>
+                  <p class="text-gray-300 text-lg">Advanced</p>
+                </div>
+
+                <div class="flex items-center gap-4 mb-5">
+                  <div class="w-12 h-12 bg-white rounded-md flex items-center justify-center">
+                    <img src="https://i.pinimg.com/736x/c5/8a/26/c58a26e3d3c03fa8fed2629804b9f234.jpg" class="w-10" />
+                  </div>
+                  <p class="text-gray-300 text-lg">Advanced</p>
+                </div>
+
+                <div class="flex items-center gap-4 mb-5">
+                  <div class="w-12 h-12 bg-white rounded-md flex items-center justify-center">
+                    <img src="https://i.pinimg.com/1200x/ef/0e/46/ef0e46f569309ce7b740f63f5cf40fd4.jpg" class="w-10" />
+                  </div>
+                  <p class="text-gray-300 text-lg">Advanced</p>
+                </div>
+              </div>
+              <div>
+                <!-- Right column icons -->
+                <div class="flex items-center gap-4 mb-6">
+                  <div class="w-12 h-12 bg-white rounded-md flex items-center justify-center">
+                    <img src="https://i.pinimg.com/736x/26/5d/df/265ddfe96b9e4ac94a4c9b7ffbe0efa6.jpg" class="w-10" />
+                  </div>
+                  <p class="text-gray-300 text-lg">Advanced</p>
+                </div>
+
+                <div class="flex items-center gap-4">
+                  <div class="w-12 h-12 bg-white rounded-md flex items-center justify-center">
+                    <img src="https://i.pinimg.com/1200x/82/8e/04/828e048606163e3a448671cec4ec6546.jpg" class="w-10" />
+                  </div>
+                  <p class="text-gray-300 text-lg">Advanced</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Languages -->
+          <div>
+            <h2 class="text-4xl font-bold mb-8 tracking-tight">languages.</h2>
+
+            <p class="text-gray-300 text-lg mb-4">
+              English <span class="italic">(fluent)</span>
+            </p>
+
+            <p class="text-gray-300 text-lg">
+              Urdu <span class="italic">(conversational)</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="paper-bg p-5">
+      <!-- Main Container -->
+      <div class="max-w-6xl mx-auto px-6">
+        <!-- SECTION: EXPERIENCES -->
+        <h2 class="text-4xl font-semibold text-gray-700 pt-10 mb-4">
+          Experiênce Relevents
+        </h2>
+
+        <div id="experience-box" class="space-y-6">
+          <div class="bg-white shadow-md rounded-2xl p-6 border-l-8 border-[bg-dark-texture] opacity-0">
+            <h3 class="text-xl font-bold text-gray-700">2025 – Presente</h3>
+            <p class="text-lg font-semibold">
+              Freelancer – Graphic Designer
+            </p>
+            <p class="text-gray-600">
+              Independent graphic designer with hands-on experience in branding and digital design. I create clean, creative, and client-focused designs for a variety of projects.
+            </p>
+          </div>
+
+          <div class="bg-white shadow-md rounded-2xl p-6 border-l-8 border-[bg-dark-texture] opacity-0">
+            <h3 class="text-xl font-bold text-gray-700">2024</h3>
+            <p class="text-lg font-semibold">
+              codeLab
+            </p>
+            <p class="text-gray-600">
+             Created visually appealing branding, social media posts, and marketing designs for clients. Worked closely with the team to deliver creative solutions that matched company goals and improved brand identity.
+            </p>
+          </div>
+        </div>
+
+        <!-- PERSONAL SKILLS -->
+        <h2 class="mt-12 text-4xl font-semibold text-black mb-4">
+          Skills passionate
+        </h2>
+
+        <div id="personal-skills" class="grid grid-cols-2 sm:grid-cols-3 gap-4">
+          <div class="bg-white px-4 py-3 rounded-full border border-black text-black text-center opacity-0">
+            Logo Design
+          </div>
+          <div class="bg-white px-4 py-3 rounded-full border border-black text-black text-center opacity-0">
+            Social Media Post Design
+          </div>
+          <div class="bg-white px-4 py-3 rounded-full border border-black text-black text-center opacity-0">
+            Branding Design
+          </div>
+          <div class="bg-white px-4 py-3 rounded-full border border-black text-black text-center opacity-0">
+            Poster / Flyer Design
+          </div>
+          <div class="bg-white px-4 py-3 rounded-full border border-black text-black text-center opacity-0">
+            Brochure & Catalog Design
+          </div>
+          <div class="bg-white px-4 py-3 rounded-full border border-black text-black text-center opacity-0">
+           Business Card Design
+          </div>
+                    <div class="bg-white px-4 py-3 rounded-full border border-black text-black text-center opacity-0">
+           Packaging Design
+          </div>
+                    <div class="bg-white px-4 py-3 rounded-full border border-black text-black text-center opacity-0">
+            UI/UX Design (Beginner Level)
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 1-  logo folio  -->
+    <section class="w-full">
+      <!-- Dark Textured Background -->
+      <div class="w-full py-24 flex justify-center items-center bg-dark-texture">
+        <h1 class="lg:text-5xl md:text-2xl flex items-center gap-2">
+          <span class="font-extrabold text-transparent stroke-white italic lg:text-8xl sm:text-7xl">01</span>
+          <span class="text-white font-extrabold">logo</span>
+          <span class="text-gray-200 italic font-300">folio</span>
+        </h1>
+      </div>
+    </section>
+    <!-- logos data -->
+
+    <section class="p-5 h-[auto]">
+      <h1 class="text-3xl font-bold mb-8 text-center">
+        Our Partners / Logos
+      </h1>
+
+      <div class="max-w-5xl mx-auto h-[auto] grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 lg:grid-cols-4 gap-6">
+        <!-- Example Logos -->
+        <div
+          class="flex items-center justify-center max-h-64 p-4 bg-white shadow rounded transform transition-transform duration-500 hover:scale-110 hover:rotate-3">
+          <img src="./media/LOGO 2 POERTFOLIO.jpg" alt="Logo 1" class="max-h-32 object-contain" />
+        </div>
+
+        <div
+          class="flex items-center justify-center p-4 max-h-64 bg-white shadow rounded transform transition-transform duration-500 hover:scale-110 hover:-rotate-3">
+          <img src="./media/CODENZA.jpg" alt="Logo 2" class="max-h-36 object-contain" />
+        </div>
+
+        <div
+          class="flex items-center justify-center p-4 max-h-64 bg-white shadow rounded transform transition-transform duration-500 hover:scale-110 hover:rotate-3">
+          <img src="./media/LOGO 3 PORTFOLIO.jpg" alt="Logo 3" class="max-h-16 object-contain" />
+        </div>
+        <div
+          class="flex items-center justify-center max-h-64 p-4 bg-white shadow rounded transform transition-transform duration-500 hover:scale-110 hover:rotate-3">
+          <img src="./media/LOGO 4 PORTFOLIO.jpg" alt="Logo 3" class="max-h-32 object-contain" />
+        </div>
+        <div
+          class="flex items-center justify-center max-h-64 p-4 bg-white shadow rounded transform transition-transform duration-500 hover:scale-110 hover:rotate-3">
+          <img src="./media/LOGO 5 PORTFOLIO.jpg" alt="Logo 3" class="max-h-32 object-contain" />
+        </div>
+        <div
+          class="flex items-center justify-center p-4 max-h-64 bg-white shadow rounded transform transition-transform duration-500 hover:scale-110 hover:rotate-3">
+          <img src="./media/LOGO 6.jpg" alt="Logo 3" class="max-h-32 object-contain" />
+        </div>
+        <div
+          class="flex items-center justify-center p-4 max-h-64 bg-white shadow rounded transform transition-transform duration-500 hover:scale-110 hover:rotate-3">
+          <img src="./media/LOGO PORTFOLIO 1.jpg" alt="Logo 3" class="max-h-32 object-contain" />
+        </div>
+        <div
+          class="flex items-center justify-center p-4 max-h-64 bg-white shadow rounded transform transition-transform duration-500 hover:scale-110 hover:rotate-3">
+          <img src="./media/Untitled-2.jpg" alt="Logo 3" class="max-h-32 object-contain" />
+        </div>
+
+        <!-- Repeat similar divs up to 67 logos -->
+        <!-- You can copy-paste and just change the image URL and alt text -->
+      </div>
+    </section>
+
+    <!-- 2  marketing materials  -->
+    <section class="w-full">
+      <div class="w-full py-24 flex justify-center items-center bg-dark-texture">
+        <h1 class="flex items-center gap-2 lg:text-5xl md:text-2xl">
+          <span class="font-extrabold text-transparent stroke-white italic lg:text-8xl sm:text-7xl">02</span>
+          <span class="text-white font-extrabold">marketing</span>
+          <span class="text-gray-200 italic">materials</span>
+        </h1>
+      </div>
+    </section>
+    <!-- marketing  data-->
+
+    <section class="max-w-5xl mx-auto">
+      <h1 class="text-3xl font-bold mb-8 text-center">
+        Graphic Design Portfolio
+      </h1>
+
+      <!-- GRID -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-5">
+        <!-- CARD 1 -->
+        <div
+          class="bg-white p-4 rounded-xl shadow-[0_4px_20px_rgba(0,0,0,0.15)] hover:scale-105 transition-all duration-300">
+          <div class="flex justify-between text-gray-700 font-semibold mb-3">
+            <span class="signature-font">Instagram</span>
+
+            <div class="flex gap-2 items-center">
+              ❤️
+
+              <!-- Small Icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-4 h-4">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M8.625 12a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H8.25m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H12m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 0 1-2.555-.337A5.972 5.972 0 0 1 5.41 20.97a5.969 5.969 0 0 1-.474-.065 4.48 4.48 0 0 0 .978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25Z" />
+              </svg>
+            </div>
+          </div>
+
+          <img src="./media/post coodenza.jpg" class="rounded-lg" />
+
+          <div class="flex justify-between mt-4 text-gray-600 text-lg items-center">
+            <div class="flex items-center gap-2">
+              ❤️
+
+              <!-- Like Icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-4 h-4">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M12 20.25c4.97 0 9-3.694 9-8.25s-4.03-8.25-9-8.25S3 7.444 3 12c0 2.104.859 4.023 2.273 5.48.432.447.74 1.04.586 1.641a4.483 4.483 0 0 1-.923 1.785A5.969 5.969 0 0 0 6 21c1.282 0 2.47-.402 3.445-1.087.81.22 1.668.337 2.555.337Z" />
+              </svg>
+
+              <!-- Share Icon (Fixed) -->
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-4 h-4">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M7.217 10.907a2.25 2.25 0 1 0 0 2.186m0-2.186c.18.324.283.696.283 1.093s-.103.77-.283 1.093m0-2.186 9.566-5.314m-9.566 7.5 9.566 5.314m0 0a2.25 2.25 0 1 0 3.935 2.186 2.25 2.25 0 0 0-3.935-2.186Zm0-12.814a2.25 2.25 0 1 0 3.933-2.185 2.25 2.25 0 0 0-3.933 2.185Z" />
+              </svg>
+            </div>
+            <!-- Save Icon -->
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" class="w-4 h-4">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0 1 11.186 0Z" />
+            </svg>
+          </div>
+        </div>
+
+        <!-- CARD 2 -->
+        <div
+          class="bg-white p-4 rounded-xl shadow-[0_4px_20px_rgba(0,0,0,0.15)] hover:scale-105 transition-all duration-300">
+          <div class="flex justify-between text-gray-700 font-semibold mb-3">
+            <span class="signature-font">Instagram</span>
+
+            <div class="flex gap-2">
+              ❤️
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M8.625 12a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H8.25m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H12m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 0 1-2.555-.337A5.972 5.972 0 0 1 5.41 20.97a5.969 5.969 0 0 1-.474-.065 4.48 4.48 0 0 0 .978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25Z" />
+              </svg>
+            </div>
+          </div>
+
+          <img src="./media/1.jpg" class="rounded-lg" />
+
+          <div class="flex justify-between mt-4 text-gray-600 text-lg items-center">
+            <div class="flex items-center gap-2">
+              ❤️
+
+              <!-- Like Icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-4 h-4">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M12 20.25c4.97 0 9-3.694 9-8.25s-4.03-8.25-9-8.25S3 7.444 3 12c0 2.104.859 4.023 2.273 5.48.432.447.74 1.04.586 1.641a4.483 4.483 0 0 1-.923 1.785A5.969 5.969 0 0 0 6 21c1.282 0 2.47-.402 3.445-1.087.81.22 1.668.337 2.555.337Z" />
+              </svg>
+
+              <!-- Share Icon (Fixed) -->
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-4 h-4">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M7.217 10.907a2.25 2.25 0 1 0 0 2.186m0-2.186c.18.324.283.696.283 1.093s-.103.77-.283 1.093m0-2.186 9.566-5.314m-9.566 7.5 9.566 5.314m0 0a2.25 2.25 0 1 0 3.935 2.186 2.25 2.25 0 0 0-3.935-2.186Zm0-12.814a2.25 2.25 0 1 0 3.933-2.185 2.25 2.25 0 0 0-3.933 2.185Z" />
+              </svg>
+            </div>
+            <!-- Save Icon -->
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" class="w-4 h-4">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0 1 11.186 0Z" />
+            </svg>
+          </div>
+        </div>
+
+        <!-- CARD 3 -->
+        <div
+          class="bg-white p-4 rounded-xl shadow-[0_4px_20px_rgba(0,0,0,0.15)] hover:scale-105 transition-all duration-300">
+          <div class="flex justify-between text-gray-700 font-semibold mb-3">
+            <span class="signature-font">Instagram</span>
+
+            <div class="flex gap-2">
+              ❤️
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M8.625 12a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H8.25m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H12m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 0 1-2.555-.337A5.972 5.972 0 0 1 5.41 20.97a5.969 5.969 0 0 1-.474-.065 4.48 4.48 0 0 0 .978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25Z" />
+              </svg>
+            </div>
+          </div>
+
+          <img src="./media/3.jpg" class="rounded-lg" />
+
+          <div class="flex justify-between mt-4 text-gray-600 text-lg items-center">
+            <div class="flex items-center gap-2">
+              ❤️
+
+              <!-- Like Icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-4 h-4">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M12 20.25c4.97 0 9-3.694 9-8.25s-4.03-8.25-9-8.25S3 7.444 3 12c0 2.104.859 4.023 2.273 5.48.432.447.74 1.04.586 1.641a4.483 4.483 0 0 1-.923 1.785A5.969 5.969 0 0 0 6 21c1.282 0 2.47-.402 3.445-1.087.81.22 1.668.337 2.555.337Z" />
+              </svg>
+
+              <!-- Share Icon (Fixed) -->
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-4 h-4">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M7.217 10.907a2.25 2.25 0 1 0 0 2.186m0-2.186c.18.324.283.696.283 1.093s-.103.77-.283 1.093m0-2.186 9.566-5.314m-9.566 7.5 9.566 5.314m0 0a2.25 2.25 0 1 0 3.935 2.186 2.25 2.25 0 0 0-3.935-2.186Zm0-12.814a2.25 2.25 0 1 0 3.933-2.185 2.25 2.25 0 0 0-3.933 2.185Z" />
+              </svg>
+            </div>
+            <!-- Save Icon -->
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" class="w-4 h-4">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0 1 11.186 0Z" />
+            </svg>
+          </div>
+        </div>
+
+        <!-- CARD 4 -->
+        <div
+          class="bg-white p-4 rounded-xl shadow-[0_4px_20px_rgba(0,0,0,0.15)] hover:scale-105 transition-all duration-300">
+          <div class="flex justify-between text-gray-700 font-semibold mb-3">
+            <span class="signature-font">Instagram</span>
+
+            <div class="flex gap-2">
+              ❤️
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M8.625 12a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H8.25m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H12m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 0 1-2.555-.337A5.972 5.972 0 0 1 5.41 20.97a5.969 5.969 0 0 1-.474-.065 4.48 4.48 0 0 0 .978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25Z" />
+              </svg>
+            </div>
+          </div>
+
+          <img src="./media/POST SKINCARE.jpg" class="rounded-lg" />
+
+          <div class="flex justify-between mt-4 text-gray-600 text-lg items-center">
+            <div class="flex items-center gap-2">
+              ❤️
+
+              <!-- Like Icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-4 h-4">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M12 20.25c4.97 0 9-3.694 9-8.25s-4.03-8.25-9-8.25S3 7.444 3 12c0 2.104.859 4.023 2.273 5.48.432.447.74 1.04.586 1.641a4.483 4.483 0 0 1-.923 1.785A5.969 5.969 0 0 0 6 21c1.282 0 2.47-.402 3.445-1.087.81.22 1.668.337 2.555.337Z" />
+              </svg>
+
+              <!-- Share Icon (Fixed) -->
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-4 h-4">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M7.217 10.907a2.25 2.25 0 1 0 0 2.186m0-2.186c.18.324.283.696.283 1.093s-.103.77-.283 1.093m0-2.186 9.566-5.314m-9.566 7.5 9.566 5.314m0 0a2.25 2.25 0 1 0 3.935 2.186 2.25 2.25 0 0 0-3.935-2.186Zm0-12.814a2.25 2.25 0 1 0 3.933-2.185 2.25 2.25 0 0 0-3.933 2.185Z" />
+              </svg>
+            </div>
+            <!-- Save Icon -->
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" class="w-4 h-4">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0 1 11.186 0Z" />
+            </svg>
+          </div>
+        </div>
+        <!-- CARD 5 -->
+        <div
+          class="bg-white p-4 rounded-xl shadow-[0_4px_20px_rgba(0,0,0,0.15)] hover:scale-105 transition-all duration-300">
+          <div class="flex justify-between text-gray-700 font-semibold mb-3">
+            <span class="signature-font">Instagram</span>
+
+            <div class="flex gap-2">
+              ❤️
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M8.625 12a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H8.25m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H12m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 0 1-2.555-.337A5.972 5.972 0 0 1 5.41 20.97a5.969 5.969 0 0 1-.474-.065 4.48 4.48 0 0 0 .978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25Z" />
+              </svg>
+            </div>
+          </div>
+
+          <img src="./media/2.jpg" class="rounded-lg shadow-2xl" />
+
+          <div class="flex justify-between mt-4 text-gray-600 text-lg items-center">
+            <div class="flex items-center gap-2">
+              ❤️
+
+              <!-- Like Icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-4 h-4">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M12 20.25c4.97 0 9-3.694 9-8.25s-4.03-8.25-9-8.25S3 7.444 3 12c0 2.104.859 4.023 2.273 5.48.432.447.74 1.04.586 1.641a4.483 4.483 0 0 1-.923 1.785A5.969 5.969 0 0 0 6 21c1.282 0 2.47-.402 3.445-1.087.81.22 1.668.337 2.555.337Z" />
+              </svg>
+
+              <!-- Share Icon (Fixed) -->
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-4 h-4">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M7.217 10.907a2.25 2.25 0 1 0 0 2.186m0-2.186c.18.324.283.696.283 1.093s-.103.77-.283 1.093m0-2.186 9.566-5.314m-9.566 7.5 9.566 5.314m0 0a2.25 2.25 0 1 0 3.935 2.186 2.25 2.25 0 0 0-3.935-2.186Zm0-12.814a2.25 2.25 0 1 0 3.933-2.185 2.25 2.25 0 0 0-3.933 2.185Z" />
+              </svg>
+            </div>
+            <!-- Save Icon -->
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" class="w-4 h-4">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0 1 11.186 0Z" />
+            </svg>
+          </div>
+        </div>
+        <!-- CARD 6 -->
+        <div
+          class="bg-white p-4 rounded-xl shadow-[0_4px_20px_rgba(0,0,0,0.15)] hover:scale-105 transition-all duration-300">
+          <div class="flex justify-between text-gray-700 font-semibold mb-3">
+            <span class="signature-font">Instagram</span>
+
+            <div class="flex gap-2">
+              ❤️
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M8.625 12a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H8.25m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H12m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 0 1-2.555-.337A5.972 5.972 0 0 1 5.41 20.97a5.969 5.969 0 0 1-.474-.065 4.48 4.48 0 0 0 .978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25Z" />
+              </svg>
+            </div>
+          </div>
+
+          <img src="./media/POST 3 BULDING CONSTRUCTIOB.jpg" class="rounded-lg shadow-2xl" />
+
+          <div class="flex justify-between mt-4 text-gray-600 text-lg items-center">
+            <div class="flex items-center gap-2">
+              ❤️
+
+              <!-- Like Icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-4 h-4">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M12 20.25c4.97 0 9-3.694 9-8.25s-4.03-8.25-9-8.25S3 7.444 3 12c0 2.104.859 4.023 2.273 5.48.432.447.74 1.04.586 1.641a4.483 4.483 0 0 1-.923 1.785A5.969 5.969 0 0 0 6 21c1.282 0 2.47-.402 3.445-1.087.81.22 1.668.337 2.555.337Z" />
+              </svg>
+
+              <!-- Share Icon (Fixed) -->
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-4 h-4">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M7.217 10.907a2.25 2.25 0 1 0 0 2.186m0-2.186c.18.324.283.696.283 1.093s-.103.77-.283 1.093m0-2.186 9.566-5.314m-9.566 7.5 9.566 5.314m0 0a2.25 2.25 0 1 0 3.935 2.186 2.25 2.25 0 0 0-3.935-2.186Zm0-12.814a2.25 2.25 0 1 0 3.933-2.185 2.25 2.25 0 0 0-3.933 2.185Z" />
+              </svg>
+            </div>
+            <!-- Save Icon -->
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" class="w-4 h-4">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0 1 11.186 0Z" />
+            </svg>
+          </div>
+        </div>
+
+        <!-- CARD 7 -->
+        <div
+          class="bg-white p-4 rounded-xl shadow-[0_4px_20px_rgba(0,0,0,0.15)] hover:scale-105 transition-all duration-300">
+          <div class="flex justify-between text-gray-700 font-semibold mb-3">
+            <span class="signature-font">Instagram</span>
+
+            <div class="flex gap-2">
+              ❤️
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M8.625 12a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H8.25m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H12m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 0 1-2.555-.337A5.972 5.972 0 0 1 5.41 20.97a5.969 5.969 0 0 1-.474-.065 4.48 4.48 0 0 0 .978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25Z" />
+              </svg>
+            </div>
+          </div>
+
+          <img src="./media/technolgie post.jpg" class="rounded-lg shadow-2xl" />
+
+          <div class="flex justify-between mt-4 text-gray-600 text-lg items-center">
+            <div class="flex items-center gap-2">
+              ❤️
+
+              <!-- Like Icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-4 h-4">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M12 20.25c4.97 0 9-3.694 9-8.25s-4.03-8.25-9-8.25S3 7.444 3 12c0 2.104.859 4.023 2.273 5.48.432.447.74 1.04.586 1.641a4.483 4.483 0 0 1-.923 1.785A5.969 5.969 0 0 0 6 21c1.282 0 2.47-.402 3.445-1.087.81.22 1.668.337 2.555.337Z" />
+              </svg>
+
+              <!-- Share Icon (Fixed) -->
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-4 h-4">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M7.217 10.907a2.25 2.25 0 1 0 0 2.186m0-2.186c.18.324.283.696.283 1.093s-.103.77-.283 1.093m0-2.186 9.566-5.314m-9.566 7.5 9.566 5.314m0 0a2.25 2.25 0 1 0 3.935 2.186 2.25 2.25 0 0 0-3.935-2.186Zm0-12.814a2.25 2.25 0 1 0 3.933-2.185 2.25 2.25 0 0 0-3.933 2.185Z" />
+              </svg>
+            </div>
+            <!-- Save Icon -->
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" class="w-4 h-4">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0 1 11.186 0Z" />
+            </svg>
+          </div>
+        </div>
+
+        <!-- CARD 8 -->
+        <div
+          class="bg-white p-4 rounded-xl shadow-[0_4px_20px_rgba(0,0,0,0.15)] hover:scale-105 transition-all duration-300">
+          <div class="flex justify-between text-gray-700 font-semibold mb-3">
+            <span class="signature-font">Instagram</span>
+
+            <div class="flex gap-2">
+              ❤️
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M8.625 12a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H8.25m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H12m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 0 1-2.555-.337A5.972 5.972 0 0 1 5.41 20.97a5.969 5.969 0 0 1-.474-.065 4.48 4.48 0 0 0 .978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25Z" />
+              </svg>
+            </div>
+          </div>
+
+          <img src="./media/a3.jpg" class="rounded-lg shadow-2xl" />
+
+          <div class="flex justify-between mt-4 text-gray-600 text-lg items-center">
+            <div class="flex items-center gap-2">
+              ❤️
+
+              <!-- Like Icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-4 h-4">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M12 20.25c4.97 0 9-3.694 9-8.25s-4.03-8.25-9-8.25S3 7.444 3 12c0 2.104.859 4.023 2.273 5.48.432.447.74 1.04.586 1.641a4.483 4.483 0 0 1-.923 1.785A5.969 5.969 0 0 0 6 21c1.282 0 2.47-.402 3.445-1.087.81.22 1.668.337 2.555.337Z" />
+              </svg>
+
+              <!-- Share Icon (Fixed) -->
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-4 h-4">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M7.217 10.907a2.25 2.25 0 1 0 0 2.186m0-2.186c.18.324.283.696.283 1.093s-.103.77-.283 1.093m0-2.186 9.566-5.314m-9.566 7.5 9.566 5.314m0 0a2.25 2.25 0 1 0 3.935 2.186 2.25 2.25 0 0 0-3.935-2.186Zm0-12.814a2.25 2.25 0 1 0 3.933-2.185 2.25 2.25 0 0 0-3.933 2.185Z" />
+              </svg>
+            </div>
+            <!-- Save Icon -->
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" class="w-4 h-4">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0 1 11.186 0Z" />
+            </svg>
+          </div>
+        </div>
+        <!-- CARD 10 -->
+        <div
+          class="bg-white p-4 rounded-xl shadow-[0_4px_20px_rgba(0,0,0,0.15)] hover:scale-105 transition-all duration-300">
+          <div class="flex justify-between text-gray-700 font-semibold mb-3">
+            <span class="signature-font">Instagram</span>
+
+            <div class="flex gap-2">
+              ❤️
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M8.625 12a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H8.25m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H12m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 0 1-2.555-.337A5.972 5.972 0 0 1 5.41 20.97a5.969 5.969 0 0 1-.474-.065 4.48 4.48 0 0 0 .978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25Z" />
+              </svg>
+            </div>
+          </div>
+
+          <img src="./media/post for counting.jpg" class="rounded-lg shadow-2xl" />
+
+          <div class="flex justify-between mt-4 text-gray-600 text-lg items-center">
+            <div class="flex items-center gap-2">
+              ❤️
+
+              <!-- Like Icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-4 h-4">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M12 20.25c4.97 0 9-3.694 9-8.25s-4.03-8.25-9-8.25S3 7.444 3 12c0 2.104.859 4.023 2.273 5.48.432.447.74 1.04.586 1.641a4.483 4.483 0 0 1-.923 1.785A5.969 5.969 0 0 0 6 21c1.282 0 2.47-.402 3.445-1.087.81.22 1.668.337 2.555.337Z" />
+              </svg>
+
+              <!-- Share Icon (Fixed) -->
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-4 h-4">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M7.217 10.907a2.25 2.25 0 1 0 0 2.186m0-2.186c.18.324.283.696.283 1.093s-.103.77-.283 1.093m0-2.186 9.566-5.314m-9.566 7.5 9.566 5.314m0 0a2.25 2.25 0 1 0 3.935 2.186 2.25 2.25 0 0 0-3.935-2.186Zm0-12.814a2.25 2.25 0 1 0 3.933-2.185 2.25 2.25 0 0 0-3.933 2.185Z" />
+              </svg>
+            </div>
+            <!-- Save Icon -->
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" class="w-4 h-4">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0 1 11.186 0Z" />
+            </svg>
+          </div>
+        </div>
+        <!-- CARD 10 -->
+        <div
+          class="bg-white p-4 rounded-xl shadow-[0_4px_20px_rgba(0,0,0,0.15)] hover:scale-105 transition-all duration-300">
+          <div class="flex justify-between text-gray-700 font-semibold mb-3">
+            <span class="signature-font">Instagram</span>
+
+            <div class="flex gap-2">
+              ❤️
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M8.625 12a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H8.25m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H12m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 0 1-2.555-.337A5.972 5.972 0 0 1 5.41 20.97a5.969 5.969 0 0 1-.474-.065 4.48 4.48 0 0 0 .978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25Z" />
+              </svg>
+            </div>
+          </div>
+
+          <img src="./media/img-20251127-wa0022.jpg" class="rounded-lg shadow-2xl" />
+
+          <div class="flex justify-between mt-4 text-gray-600 text-lg items-center">
+            <div class="flex items-center gap-2">
+              ❤️
+
+              <!-- Like Icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-4 h-4">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M12 20.25c4.97 0 9-3.694 9-8.25s-4.03-8.25-9-8.25S3 7.444 3 12c0 2.104.859 4.023 2.273 5.48.432.447.74 1.04.586 1.641a4.483 4.483 0 0 1-.923 1.785A5.969 5.969 0 0 0 6 21c1.282 0 2.47-.402 3.445-1.087.81.22 1.668.337 2.555.337Z" />
+              </svg>
+
+              <!-- Share Icon (Fixed) -->
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-4 h-4">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M7.217 10.907a2.25 2.25 0 1 0 0 2.186m0-2.186c.18.324.283.696.283 1.093s-.103.77-.283 1.093m0-2.186 9.566-5.314m-9.566 7.5 9.566 5.314m0 0a2.25 2.25 0 1 0 3.935 2.186 2.25 2.25 0 0 0-3.935-2.186Zm0-12.814a2.25 2.25 0 1 0 3.933-2.185 2.25 2.25 0 0 0-3.933 2.185Z" />
+              </svg>
+            </div>
+            <!-- Save Icon -->
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" class="w-4 h-4">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0 1 11.186 0Z" />
+            </svg>
+          </div>
+        </div>
+
+        <div
+          class="bg-white p-4 rounded-xl shadow-[0_4px_20px_rgba(0,0,0,0.15)] hover:scale-105 transition-all duration-300">
+          <div class="flex justify-between text-gray-700 font-semibold mb-3">
+            <span class="signature-font">Instagram</span>
+
+            <div class="flex gap-2">
+              ❤️
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M8.625 12a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H8.25m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H12m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 0 1-2.555-.337A5.972 5.972 0 0 1 5.41 20.97a5.969 5.969 0 0 1-.474-.065 4.48 4.48 0 0 0 .978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25Z" />
+              </svg>
+            </div>
+          </div>
+
+          <img src="./media/again.jpg" class="rounded-lg shadow-2xl" />
+
+          <div class="flex justify-between mt-4 text-gray-600 text-lg items-center">
+            <div class="flex items-center gap-2">
+              ❤️
+
+              <!-- Like Icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-4 h-4">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M12 20.25c4.97 0 9-3.694 9-8.25s-4.03-8.25-9-8.25S3 7.444 3 12c0 2.104.859 4.023 2.273 5.48.432.447.74 1.04.586 1.641a4.483 4.483 0 0 1-.923 1.785A5.969 5.969 0 0 0 6 21c1.282 0 2.47-.402 3.445-1.087.81.22 1.668.337 2.555.337Z" />
+              </svg>
+
+              <!-- Share Icon (Fixed) -->
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-4 h-4">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M7.217 10.907a2.25 2.25 0 1 0 0 2.186m0-2.186c.18.324.283.696.283 1.093s-.103.77-.283 1.093m0-2.186 9.566-5.314m-9.566 7.5 9.566 5.314m0 0a2.25 2.25 0 1 0 3.935 2.186 2.25 2.25 0 0 0-3.935-2.186Zm0-12.814a2.25 2.25 0 1 0 3.933-2.185 2.25 2.25 0 0 0-3.933 2.185Z" />
+              </svg>
+            </div>
+            <!-- Save Icon -->
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" class="w-4 h-4">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0 1 11.186 0Z" />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3-  social media  -->
+    <section class="w-full">
+      <div class="w-full py-24 flex justify-center items-center bg-dark-texture">
+        <h1 class="lg:text-5xl md:text-2xl flex items-center gap-2">
+          <span class="font-extrabold text-transparent stroke-white italic lg:text-8xl sm:text-7xl">03</span>
+          <span class="text-white font-extrabold">Illustration</span>
+          <span class="text-gray-200 italic">project</span>
+        </h1>
+      </div>
+    </section>
+    <!-- social media   data-->
+
+    <section class="w-full paper-bg relative">
+      <!-- Background with overlay -->
+      <div class="min-h-screen flex justify-center items-center bg-cover bg-center px-4 relative"
+        style="background-image: url('./media/NEW FINAL_page-0001.jpg')">
+        <!-- Black overlay -->
+        <div class="absolute inset-0 bg-black/70"></div>
+
+        <!-- Foreground content (Image card) -->
+        <div
+          class="relative max-w-7xl overflow-hidden rounded-2xl shadow-[0_4px_25px_rgba(0,0,0,0.25)] animate-fadeInUp">
+          <img src="./media/NEW FINAL_page-0001.jpg" alt="Banner"
+            class="w-full h-96 object-cover hover:scale-105 transition-transform duration-700" />
+        </div>
+      </div>
+    </section>
+
+    <!-- 4 - market place  -->
+    <section class="w-full">
+      <div class="w-full py-24 flex justify-center items-center bg-dark-texture">
+        <h1 class="lg:text-5xl md:text-2xl flex items-center gap-2">
+          <span class="font-extrabold text-transparent stroke-white italic lg:text-8xl sm:text-7xl">04</span>
+          <span class="text-white font-extrabold">Bussines </span>
+          <span class="text-gray-200 italic">Card</span>
+        </h1>
+      </div>
+    </section>
+    <!-- marketplace  data-->
+
+    <section class="min-h-screen py-16 px-6 max-w-6xl mx-auto">
+      <!-- Page Heading -->
+      <div class="text-center mb-12 animate-fadeInUp">
+        <h1 class="text-4xl font-bold text-gray-900 tracking-wide">
+          Business Cards
+        </h1>
+      </div>
+
+      <!-- 4 Image Cards -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-10 max-w-7xl mx-auto">
+        <!-- Card 1 -->
+        <div class="overflow-hidden rounded-xl shadow-lg hover:scale-105 transition-all duration-500 animate-fadeInUp">
+          <img src="./media/4 buissness card.jpg" alt="Card 1" class="w-full h-full object-cover" />
+        </div>
+
+        <!-- Card 2 -->
+        <div
+          class="overflow-hidden rounded-xl shadow-lg hover:scale-105 transition-all duration-500 animate-fadeInUp delay-200">
+          <img src="./media/2 bussiness card.jpg" alt="Card 2" class="w-full h-full object-cover" />
+        </div>
+
+        <!-- Card 3 -->
+        <div
+          class="overflow-hidden rounded-xl shadow-lg hover:scale-105 transition-all duration-500 animate-fadeInUp delay-300">
+          <img src="./media/buisness card 3.jpg" alt="Card 3" class="w-full h-full object-cover" />
+        </div>
+
+        <!-- Card 4 -->
+        <div
+          class="overflow-hidden rounded-xl shadow-lg hover:scale-105 transition-all duration-500 animate-fadeInUp delay-500">
+          <img src="./media/1 buissness card.jpg" alt="Card 4" class="w-full h-full object-cover" />
+        </div>
+      </div>
+    </section>
+
+    <!-- 5 - personal project  -->
+    <section class="w-full">
+      <div class="w-full py-24 flex justify-center items-center bg-dark-texture">
+        <h1 class="lg:text-5xl md:text-2xl flex items-center gap-2">
+          <span class="font-extrabold text-transparent stroke-white italic lg:text-8xl sm:text-7xl">05</span>
+          <span class="text-white font-extrabold"> Standee</span>
+          <span class="text-gray-200 italic">project</span>
+        </h1>
+      </div>
+    </section>
+    <!-- personal project  data-->
+
+    <section class="max-w-6xl mx-auto px-5 h-auto py-10">
+
+
+      <div class="grid items-center justify-center gap-10">
+        <!-- Standee Card 1 -->
+        <div class="relative w-full   md:relative md:right-0      lg:relative  lg:right-60    " data-aos="fade-right">
+          <!-- Standee Mockup -->
+          <img src="./media/NEW 2 STANDEES.jpg" class="w-[100%] h-[80vh] object-cover" alt="Standee Mockup" />
+
+
+        </div>
+
+        <!-- Standee Card 2 -->
+        <div class="relative w-full    md:relative md:left-0 bottom-0 top-5       lg:relative  lg:left-60   bottom-20"
+          data-aos="fade-left">
+          <!-- Standee Mockup -->
+          <img src="./media/new standee 4.jpg" class="w-[100%] h-[80vh] object-cover" alt="Standee Mockup" />
+        </div>
+        <h1 class="text-4xl font-bold text-center mb-10 text-gray-800">
+          Modern & Professional
+        </h1>
+
+        <!-- Standee Card 3-->
+        <div class="relative w-full    md:relative md:right-0      lg:relative  lg:right-60 " data-aos="fade-right">
+          <!-- Standee Mockup -->
+          <img src="./media/standee 1new.jpg" class="w-[100%] h-[80vh] object-cover" alt="Standee Mockup" />
+        </div>
+
+        <!-- Standee Card 4-->
+        <div class="relative w-full  md:relative md:left-0 bottom-0 top-5    lg:relative  lg:left-60   bottom-20"
+          data-aos="fade-left">
+          <!-- Standee Mockup -->
+          <img src="./media/3 new serum.jpg" class="w-[100%] h-[80vh] object-cover" alt="Standee Mockup" />
+        </div>
+      </div>
+    </section>
+
+    <!-- 6 - Branding  -->
+    <section class="w-full">
+      <div class="w-full py-24 flex justify-center items-center bg-dark-texture">
+        <h1 class="lg:text-5xl md:text-2xl flex items-center gap-2">
+          <span class="font-extrabold text-transparent stroke-white italic lg:text-8xl sm:text-7xl">06</span>
+          <span class="text-white font-extrabold">Branding</span>
+          <span class="text-gray-200 italic">project</span>
+        </h1>
+      </div>
+    </section>
+    <!-- branding project  data-->
+<section class="max-w-6xl mx-auto px-5 py-12">
+  <h1 class="text-4xl md:text-5xl font-bold text-center mb-12 text-gray-800">
+    My Branding Portfolio
+  </h1>
+
+  <div class="flex flex-col gap-16">
+
+    <!-- 1: LEFT -->
+    <div class="flex justify-start "   data-aos="fade-right">
+      <img src="./media/1.png"
+        class="w-full md:w-[60%] rounded-xl h-80 object-contain hover:scale-110 transition duration-500" />
+    </div>
+
+    <!-- 2: RIGHT -->
+    <div class="flex justify-end"  data-aos="fade-left">
+      <img src="./media/b4.png"
+        class="w-full md:w-[60%] rounded-xl h-80 object-contain hover:scale-110 transition duration-500" />
+    </div>
+
+    <!-- 3: LEFT -->
+    <div class="flex justify-start"  data-aos="fade-right">
+      <img src="./media/b5.png"
+        class="w-full md:w-[60%] rounded-xl h-80 object-contain hover:scale-110 transition duration-500" />
+    </div>
+
+    <!-- 4: RIGHT -->
+    <div class="flex justify-end"  data-aos="fade-left">
+      <img src="./media/b6.png"
+        class="w-full md:w-[60%] rounded-xl h-80 object-contain hover:scale-110 transition duration-500" />
+    </div>
+
+    <!-- 5: LEFT -->
+    <div class="flex justify-start"  data-aos="fade-right">
+      <img src="./media/b7.png"
+        class="w-full md:w-[60%] rounded-xl h-80 object-contain hover:scale-110 transition duration-500" />
+    </div>
+
+    <!-- 6: RIGHT -->
+    <div class="flex justify-end"  data-aos="fade-left">
+      <img src="./media/b8.png"
+        class="w-full md:w-[60%] rounded-xl h-80 object-contain hover:scale-110 transition duration-500" />
+    </div>
+
+    <!-- 7: LEFT -->
+    <div class="flex justify-start"  data-aos="fade-right">
+      <img src="./media/b9.png"
+        class="w-full md:w-[60%] rounded-xl h-80 object-contain hover:scale-110 transition duration-500" />
+    </div>
+
+    <!-- 8: RIGHT -->
+    <div class="flex justify-end"  data-aos="fade-left">
+      <img src="./media/b10.png"
+        class="w-full md:w-[60%] rounded-xl h-80 object-contain hover:scale-110 transition duration-500" />
+    </div>
+
+    <!-- 9: LEFT -->
+    <div class="flex justify-start"  data-aos="fade-right">
+      <img src="./media/b11.png"
+        class="w-full md:w-[60%] rounded-xl h-80 object-cover hover:scale-110 transition duration-500" />
+    </div>
+
+    <!-- 10: RIGHT -->
+    <div class="flex justify-end"   data-aos="fade-left">
+      <img src="./media/b12.png"
+        class="w-full md:w-[60%] rounded-xl h-80 object-cover hover:scale-110 transition duration-500" />
+    </div>
+
+    <!-- 11: LEFT -->
+    <div class="flex justify-start"  data-aos="fade-right">
+      <img src="./media/b13.png"
+        class="w-full md:w-[60%] rounded-xl h-80 object-cover hover:scale-110 transition duration-500" />
+    </div>
+
+    <!-- 12: RIGHT -->
+    <div class="flex justify-end"   data-aos="fade-left">
+      <img src="./media/b14.png"
+        class="w-full md:w-[60%] rounded-xl h-80 object-cover hover:scale-110 transition duration-500" />
+    </div>
+
+    <!-- 13: LEFT -->
+    <div class="flex justify-start"   data-aos="fade-right">
+      <img src="./media/b15.png"
+        class="w-full md:w-[60%] rounded-xl h-80 object-cover hover:scale-110 transition duration-500" />
+    </div>
+
+    <!-- 14: RIGHT -->
+    <div class="flex justify-end"   data-aos="fade-left">
+      <img src="./media/b16.png"
+        class="w-full md:w-[60%] rounded-xl h-80 object-cover hover:scale-110 transition duration-500" />
+    </div>
+
+    <!-- 15: LEFT -->
+    <div class="flex justify-start"   data-aos="fade-right">
+      <img src="./media/b17.png"
+        class="w-full md:w-[60%] rounded-xl h-80 object-cover hover:scale-110 transition duration-500" />
+    </div>
+
+    <!-- 16: RIGHT -->
+    <div class="flex justify-end"   data-aos="fade-left">
+      <img src="./media/b18.png"
+        class="w-full md:w-[60%] rounded-xl h-80 object-cover hover:scale-110 transition duration-500" />
+    </div>
+
+  </div>
+</section>
+
+
+
+    <!-- thankyou section  -->
+
+    <section class="paper-bg flex-1 flex flex-col items-center justify-center text-center px-4 py-20">
+      <h1 class="lg:text-5xl md:text-2xl font-extrabold text-gray-800">
+        thank<span class="italic font-semibold">you!</span>
+      </h1>
+
+      <p class="mt-4 text-gray-100 text-lg">
+        looking forward to work with you.
+      </p>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark-texture w-full py-12 border-t border-gray-300/40">
+      <div class="max-w-5xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-10 text-center md:text-left">
+        <!-- Contact Info -->
+        <div>
+          <h3 class="text-lg font-semibold text-gray-200 mb-2">Contact</h3>
+          <p class="text-gray-100">Let’s connect and collaborate!</p>
+          <p class="mt-2 text-gray-100 font-medium">Email:</p>
+          <a href="mailto:youremail@example.com" class="text-gray-100 hover:text-black">
+            yashuuz786@gmail.com
+          </a>
+        </div>
+
+        <!-- Social Links -->
+        <div>
+          <h3 class="text-lg font-semibold text-gray-100 mb-2">Follow Me</h3>
+          <ul class="space-y-1 text-gray-100">
+            <li>
+              <a href="https://www.instagram.com/7ae45y?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                class="hover:text-grey-300">Instagram</a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/yashfa-taqreer-299365229/" class="hover:text-grey-300">LinkedIn</a>
+            </li>
+            <li>
+              <a href="https://www.behance.net/yashfataqreer" class="hover:text-grey-300">Behance</a>
+            </li>
+            <li><a href="#" class="hover:text-black">Dribbble</a></li>
+          </ul>
+        </div>
+
+        <!-- Website Info -->
+        <div>
+          <h3 class="text-lg font-semibold text-gray-200 mb-2">Portfolio</h3>
+          <p class="text-gray-100">Thank you for viewing my work.</p>
+          <p class="text-gray-100">
+            Looking forward to future projects together.
+          </p>
+        </div>
+      </div>
+
+      <div class="text-center text-gray-100 text-sm mt-10">
+        © 2025 Yashfa Taqreer — All Rights Reserved.
+      </div>
+    </footer>
+  </main>
+
+  <!-- GSAP Animations -->
+  <script>
+    // Experience cards animation
+    gsap.to("#experience-box > div", {
+      opacity: 1,
+      x: 0,
+      duration: 1,
+      stagger: 0.3,
+      delay: 0.2,
+    });
+
+    // Personal skills animation
+    gsap.to("#personal-skills > div", {
+      opacity: 1,
+      y: 0,
+      duration: 1,
+      stagger: 0.2,
+      delay: 0.5,
+    });
+  </script>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 800,
+      easing: "ease-in-out",
+      once: true,
+    });
+  </script>
+</body>
+
+</html>
